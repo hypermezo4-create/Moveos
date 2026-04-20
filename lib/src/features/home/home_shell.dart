@@ -49,13 +49,13 @@ class _HomeShellState extends State<HomeShell> {
           Padding(
             padding: EdgeInsets.only(right: 16),
             child: Center(
-              child: StatusBadge(label: 'VERIFIED', color: MoveTheme.success),
+              child: StatusBadge(label: 'VERIFIED', color: MoveTheme.primary),
             ),
           ),
         ],
       ),
       drawer: Drawer(
-        backgroundColor: const Color(0xFF0D0F18),
+        backgroundColor: const Color(0xFF080808),
         child: SafeArea(
           child: ListView(
             padding: const EdgeInsets.all(16),
@@ -65,9 +65,9 @@ class _HomeShellState extends State<HomeShell> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(24),
                   gradient: const LinearGradient(
-                    colors: [Color(0xFF181B2D), Color(0xFF0F1120)],
+                    colors: [Color(0xFF141414), Color(0xFF090909)],
                   ),
-                  border: Border.all(color: MoveTheme.primary.withValues(alpha: 0.3)),
+                  border: Border.all(color: MoveTheme.primary.withValues(alpha: 0.28)),
                 ),
                 child: Row(
                   children: [
@@ -87,7 +87,7 @@ class _HomeShellState extends State<HomeShell> {
                         children: [
                           Text('MoveOS Control', style: TextStyle(fontWeight: FontWeight.w800)),
                           SizedBox(height: 4),
-                          Text('Power • Control • Freedom', style: TextStyle(fontSize: 12, color: Color(0xFF9AA0BF))),
+                          Text('Power • Control • Gold', style: TextStyle(fontSize: 12, color: MoveTheme.textMuted)),
                         ],
                       ),
                     ),
@@ -135,7 +135,7 @@ class _HomeShellState extends State<HomeShell> {
       body: DecoratedBox(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0B0D19), MoveTheme.background],
+            colors: [Color(0xFF080808), MoveTheme.background],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
@@ -150,9 +150,9 @@ class _HomeShellState extends State<HomeShell> {
             currentIndex: _index,
             onTap: (value) => setState(() => _index = value),
             type: BottomNavigationBarType.fixed,
-            backgroundColor: const Color(0xFF101320),
+            backgroundColor: const Color(0xFF0A0A0A),
             selectedItemColor: MoveTheme.primary,
-            unselectedItemColor: const Color(0xFF8C90AD),
+            unselectedItemColor: const Color(0xFF8C8067),
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home_outlined), activeIcon: Icon(Icons.home_rounded), label: 'Home'),
               BottomNavigationBarItem(icon: Icon(Icons.memory_outlined), activeIcon: Icon(Icons.memory_rounded), label: 'System'),

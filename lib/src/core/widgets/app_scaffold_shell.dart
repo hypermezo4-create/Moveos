@@ -24,7 +24,7 @@ class AppScaffoldShell extends StatelessWidget {
       body: DecoratedBox(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            colors: [Color(0xFF0A0B14), MoveTheme.background],
+            colors: [Color(0xFF090909), MoveTheme.background],
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),

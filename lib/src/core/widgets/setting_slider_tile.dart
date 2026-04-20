@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/move_theme.dart';
+
 class SettingSliderTile extends StatelessWidget {
   const SettingSliderTile({
     super.key,
@@ -26,9 +28,15 @@ class SettingSliderTile extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 14),
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0xFF111322),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withValues(alpha: 0.26)),
+        color: MoveTheme.panelAlt,
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: color.withValues(alpha: 0.24)),
+        boxShadow: [
+          BoxShadow(
+            color: color.withValues(alpha: 0.08),
+            blurRadius: 16,
+          ),
+        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +48,7 @@ class SettingSliderTile extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.12),
+                  color: color.withValues(alpha: 0.10),
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: Text(label, style: TextStyle(color: color, fontWeight: FontWeight.w700)),

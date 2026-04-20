@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/move_theme.dart';
+
 class SettingSwitchTile extends StatelessWidget {
   const SettingSwitchTile({
     super.key,
@@ -24,9 +26,9 @@ class SettingSwitchTile extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 14),
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
-        color: const Color(0xFF111322),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withValues(alpha: 0.28)),
+        color: MoveTheme.panelAlt,
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: color.withValues(alpha: 0.24)),
       ),
       child: Row(
         children: [
@@ -34,7 +36,7 @@ class SettingSwitchTile extends StatelessWidget {
             height: 44,
             width: 44,
             decoration: BoxDecoration(
-              color: color.withValues(alpha: 0.14),
+              color: color.withValues(alpha: 0.10),
               borderRadius: BorderRadius.circular(14),
             ),
             child: Icon(icon, color: color),
@@ -48,7 +50,7 @@ class SettingSwitchTile extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   subtitle,
-                  style: TextStyle(color: Colors.white.withValues(alpha: 0.6), fontSize: 12),
+                  style: TextStyle(color: Colors.white.withValues(alpha: 0.60), fontSize: 12),
                 ),
               ],
             ),
