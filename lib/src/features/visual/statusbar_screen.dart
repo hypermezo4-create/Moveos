@@ -447,7 +447,8 @@ class _PreviewFrame extends StatelessWidget {
     }
 
     final isDragging = draggingId == item.id;
-    return LongPressDraggable<String>(
+    return Draggable<String>(
+      dragAnchorStrategy: childDragAnchorStrategy,
       data: item.id,
       onDragStarted: () => onDragStarted(item.id),
       onDragEnd: (_) => onDragEnded(),
@@ -552,12 +553,9 @@ class _PreviewIcon extends StatelessWidget {
               ]
             : null,
       ),
-      child: ColorFiltered(
-        colorFilter: const ColorFilter.mode(MoveTheme.primary, BlendMode.srcIn),
-        child: Padding(
-          padding: const EdgeInsets.all(3),
-          child: Image.asset(asset, fit: BoxFit.contain),
-        ),
+      child: Padding(
+        padding: const EdgeInsets.all(3),
+        child: Image.asset(asset, fit: BoxFit.contain),
       ),
     );
   }
@@ -634,12 +632,9 @@ class _CardBadge extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: MoveTheme.primary.withValues(alpha: 0.16)),
       ),
-      child: ColorFiltered(
-        colorFilter: const ColorFilter.mode(MoveTheme.primary, BlendMode.srcIn),
-        child: Padding(
-          padding: const EdgeInsets.all(5),
-          child: Image.asset(asset, fit: BoxFit.contain),
-        ),
+      child: Padding(
+        padding: const EdgeInsets.all(5),
+        child: Image.asset(asset, fit: BoxFit.contain),
       ),
     );
   }
