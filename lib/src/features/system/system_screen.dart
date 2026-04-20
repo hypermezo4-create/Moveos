@@ -108,7 +108,7 @@ class _MappingTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF111322),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.28)),
+        border: Border.all(color: color.withValues(alpha: 0.28)),
       ),
       child: Row(
         children: [

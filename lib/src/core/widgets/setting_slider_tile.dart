@@ -28,7 +28,7 @@ class SettingSliderTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF111322),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.26)),
+        border: Border.all(color: color.withValues(alpha: 0.26)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class SettingSliderTile extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                 decoration: BoxDecoration(
-                  color: color.withOpacity(0.12),
+                  color: color.withValues(alpha: 0.12),
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: Text(label, style: TextStyle(color: color, fontWeight: FontWeight.w700)),

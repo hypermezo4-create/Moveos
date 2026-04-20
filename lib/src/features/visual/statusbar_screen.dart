@@ -49,7 +49,7 @@ class _StatusbarScreenState extends State<StatusbarScreen> {
                   decoration: BoxDecoration(
                     color: const Color(0xFF0A0E1B),
                     borderRadius: BorderRadius.circular(18),
-                    border: Border.all(color: MoveTheme.secondary.withOpacity(0.35)),
+                    border: Border.all(color: MoveTheme.secondary.withValues(alpha: 0.35)),
                   ),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

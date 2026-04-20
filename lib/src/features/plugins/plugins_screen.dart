@@ -51,7 +51,7 @@ class PluginsScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color(0xFF111322),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: plugin.$4.withOpacity(0.25)),
+                  border: Border.all(color: plugin.$4.withValues(alpha: 0.25)),
                 ),
                 child: Row(
                   children: [
@@ -59,7 +59,7 @@ class PluginsScreen extends StatelessWidget {
                       height: 46,
                       width: 46,
                       decoration: BoxDecoration(
-                        color: plugin.$4.withOpacity(0.14),
+                        color: plugin.$4.withValues(alpha: 0.14),
                         borderRadius: BorderRadius.circular(14),
                       ),
                       child: Icon(Icons.widgets_outlined, color: plugin.$4),

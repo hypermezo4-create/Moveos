@@ -26,7 +26,7 @@ class SettingSwitchTile extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF111322),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.28)),
+        border: Border.all(color: color.withValues(alpha: 0.28)),
       ),
       child: Row(
         children: [
@@ -34,7 +34,7 @@ class SettingSwitchTile extends StatelessWidget {
             height: 44,
             width: 44,
             decoration: BoxDecoration(
-              color: color.withOpacity(0.14),
+              color: color.withValues(alpha: 0.14),
               borderRadius: BorderRadius.circular(14),
             ),
             child: Icon(icon, color: color),
@@ -48,7 +48,7 @@ class SettingSwitchTile extends StatelessWidget {
                 const SizedBox(height: 4),
                 Text(
                   subtitle,
-                  style: TextStyle(color: Colors.white.withOpacity(0.6), fontSize: 12),
+                  style: TextStyle(color: Colors.white.withValues(alpha: 0.6), fontSize: 12),
                 ),
               ],
             ),

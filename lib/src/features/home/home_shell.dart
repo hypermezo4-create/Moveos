@@ -41,7 +41,7 @@ class _HomeShellState extends State<HomeShell> {
             const Text('MoveOS Control'),
             Text(
               _labels[_index],
-              style: TextStyle(color: Colors.white.withOpacity(0.64), fontSize: 12),
+              style: TextStyle(color: Colors.white.withValues(alpha: 0.64), fontSize: 12),
             ),
           ],
         ),
@@ -67,7 +67,7 @@ class _HomeShellState extends State<HomeShell> {
                   gradient: const LinearGradient(
                     colors: [Color(0xFF181B2D), Color(0xFF0F1120)],
                   ),
-                  border: Border.all(color: MoveTheme.primary.withOpacity(0.3)),
+                  border: Border.all(color: MoveTheme.primary.withValues(alpha: 0.3)),
                 ),
                 child: Row(
                   children: [

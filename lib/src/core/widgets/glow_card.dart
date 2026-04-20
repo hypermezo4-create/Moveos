@@ -29,10 +29,10 @@ class GlowCard extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
-        border: Border.all(color: color.withOpacity(0.45)),
+        border: Border.all(color: color.withValues(alpha: 0.45)),
         boxShadow: [
           BoxShadow(
-            color: color.withOpacity(0.16),
+            color: color.withValues(alpha: 0.16),
             blurRadius: 22,
             spreadRadius: 1,
           ),

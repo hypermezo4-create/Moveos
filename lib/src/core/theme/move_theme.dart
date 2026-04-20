@@ -31,7 +31,7 @@ class MoveTheme {
         surfaceTintColor: Colors.transparent,
         elevation: 0,
       ),
-      cardTheme: const CardTheme(
+      cardTheme: const CardThemeData(
         color: panel,
         surfaceTintColor: Colors.transparent,
         elevation: 0,
@@ -55,7 +55,7 @@ class MoveTheme {
         activeTrackColor: primary,
         inactiveTrackColor: const Color(0xFF2A2C42),
         thumbColor: Colors.white,
-        overlayColor: primary.withOpacity(0.16),
+        overlayColor: primary.withValues(alpha: 0.16),
       ),
     );
   }

@@ -52,7 +52,7 @@ class SecurityScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: const Color(0xFF111322),
                   borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: check.$3.withOpacity(0.25)),
+                  border: Border.all(color: check.$3.withValues(alpha: 0.25)),
                 ),
                 child: Row(
                   children: [

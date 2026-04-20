@@ -153,7 +153,7 @@ class _ModuleCard extends StatelessWidget {
             height: 48,
             width: 48,
             decoration: BoxDecoration(
-              color: color.withOpacity(0.14),
+              color: color.withValues(alpha: 0.14),
               borderRadius: BorderRadius.circular(16),
             ),
             child: Icon(icon, color: color),
@@ -183,7 +183,7 @@ class _RecentChange extends StatelessWidget {
       decoration: BoxDecoration(
         color: const Color(0xFF111322),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: color.withOpacity(0.25)),
+        border: Border.all(color: color.withValues(alpha: 0.25)),
       ),
       child: Row(
         children: [
